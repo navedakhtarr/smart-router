@@ -6,11 +6,11 @@ import json
 
 LLM_MAPPING = {
     "healthcare": "microsoft/phi-3-medium-128k-instruct:free",
-    "mathematics": "meta-llama/llama-3.1-405b-instruct:free",
-    "programming": "meta-llama/llama-3.1-405b-instruct:free",
+    "mathematics": "meta-llama/llama-3.1-8b-instruct",
+    "programming": "huggingfaceh4/zephyr-7b-beta:free",
     "creative writing": "mistralai/mistral-7b-instruct:free",
     "science": "qwen/qwen-2-7b-instruct:free",
-    "reasoning": "meta-llama/llama-3.1-405b-instruct:free",
+    "reasoning": "meta-llama/llama-3.1-8b-instruct",
     "education": "meta-llama/llama-3.1-405b-instruct:free",  
     "general knowledge": "huggingfaceh4/zephyr-7b-beta:free",  
     "travel": "mistralai/mistral-7b-instruct:free",  
@@ -32,7 +32,7 @@ LLM_MAPPING = {
     "job": "meta-llama/llama-3.1-405b-instruct:free",
     "diy": "huggingfaceh4/zephyr-7b-beta:free",
     "dating": "meta-llama/llama-3.1-70b-instruct:free",
-    "psychology": "meta-llama/llama-3.1-70b-instruct:free",
+    "psychology": "meta-llama/llama-3.1-405b-instruct",
     "law": "microsoft/phi-3-medium-128k-instruct:free",
     "environment": "meta-llama/llama-3.1-405b-instruct:free",
     "astronomy": "qwen/qwen-2-7b-instruct:free",
