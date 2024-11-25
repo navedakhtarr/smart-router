@@ -20,7 +20,7 @@ LLM_MAPPING = {
     "art": "mistralai/mistral-7b-instruct:free",
     "music": "mistralai/mistral-7b-instruct:free",
     "sports": "huggingfaceh4/zephyr-7b-beta:free",
-    "fitness": "google/gemini-exp-1114",
+    "fitness": "google/gemini-exp-1114:free",
     "food ": "mistralai/mistral-7b-instruct:free",
     "childcare": "huggingfaceh4/zephyr-7b-beta:free",
     "language": "meta-llama/llama-3.1-405b-instruct:free",
@@ -28,8 +28,8 @@ LLM_MAPPING = {
     "marketing": "huggingfaceh4/zephyr-7b-beta:free",
     "job": "meta-llama/llama-3.1-405b-instruct:free",
     "diy": "huggingfaceh4/zephyr-7b-beta:free",
-    "dating": "google/gemini-exp-1114",
-    "psychology": "google/gemini-exp-1114",
+    "dating": "google/gemini-exp-1114:free",
+    "psychology": "google/gemini-exp-1114:free",
     "law": "microsoft/phi-3-medium-128k-instruct:free",
     "environment": "meta-llama/llama-3.1-405b-instruct:free",
     "astronomy": "qwen/qwen-2-7b-instruct:free",
@@ -37,7 +37,7 @@ LLM_MAPPING = {
     "gaming": "qwen/qwen-2-7b-instruct:free",
     "mythology": "mistralai/mistral-7b-instruct:free",
     "religion": "mistralai/mistral-7b-instruct:free",
-    "pets": "google/gemini-exp-1114"
+    "pets": "google/gemini-exp-1114:free"
 }
 
 
