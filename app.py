@@ -2,13 +2,12 @@ import streamlit as st
 import requests
 import json
 
-#change llm google/gemini-exp-1114:free
 
 
 LLM_MAPPING = {
     "healthcare": "microsoft/phi-3-medium-128k-instruct:free",
     "mathematics": "meta-llama/llama-3.1-405b-instruct:free",
-    "programming": "hliquid/lfm-40b:free",
+    "programming": "meta-llama/llama-3.1-405b-instruct:free",
     "creative writing": "mistralai/mistral-7b-instruct:free",
     "science": "qwen/qwen-2-7b-instruct:free",
     "reasoning": "meta-llama/llama-3.1-405b-instruct:free",
@@ -73,7 +72,7 @@ def detect_intent(query):
     if response.status_code == 200:
         response_data = response.json()
         intent = response_data["choices"][0]["message"]["content"].strip().lower()
-        intent = intent.strip(".:;")  # Clean detected intent
+        intent = intent.strip(".:;")  
         return intent
     else:
         raise Exception(f"Error {response.status_code}: {response.text}")
@@ -108,7 +107,6 @@ def fetch_response(query, llm_name):
         
     except Exception as e: 
         print(e)
-        #raise Exception(f"Error {response.status_code}: {response.text}")
 
 st.title("AiGator - Smart Router")
 
@@ -119,10 +117,9 @@ if st.button("Ask"):
         with st.spinner("Detecting intent..."):
             try:
                 intent = detect_intent(user_query)
-                intent = intent.strip(".:,")  # Clean here as well
+                intent = intent.strip(".:,")  
                 st.success(f"Detected Intent: {intent.capitalize()}")
 
-                # Ensure the mapping is correct
                 selected_llm = LLM_MAPPING.get(intent)
                 if not selected_llm:
                     st.error(f"No LLM found for intent: {intent}")
