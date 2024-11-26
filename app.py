@@ -61,7 +61,7 @@ def detect_intent(query):
                 Reply with only one word from the given list above without any special characters: '{query}'"""
             }
         ],
-        "max_tokens": 100,
+        "max_tokens": 500,
         "temperature": 0.7
     }
     headers = {
@@ -86,7 +86,7 @@ def fetch_response(query, llm_name):
                 "content": query
             }
         ],
-        "max_tokens": 300,
+        "max_tokens": 1000,
         "temperature": 0.7
     }
     headers = {
